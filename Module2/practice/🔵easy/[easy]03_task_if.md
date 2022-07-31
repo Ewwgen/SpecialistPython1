@@ -15,9 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+x = int(input())
+y = int(input())
+z = int(input())
 
+if x+y > z  and  x+z > y and y+z > x :
+    print('Существует')
+else:
+    print('Не существует')
 ---
 
 ### Данные для самопроверки
