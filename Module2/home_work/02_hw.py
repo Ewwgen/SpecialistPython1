@@ -14,7 +14,7 @@ if  n % 10 in (2,3,4):
 elif n % 10 in (5,6,7,8,9):
     print(str(n)+' коров')
 elif n % 10 == 1:
-  if n ==11 or (n-11)%10==0:
+  if n ==11 or ((n-11)%10==0 and not ((n-11)/10)%10==9) :
     print(str(n)+' коров')
   else:
     print(str(n)+' корова')
