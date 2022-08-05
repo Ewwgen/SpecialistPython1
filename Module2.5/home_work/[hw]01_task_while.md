@@ -36,6 +36,13 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost=float(input())
+n=int(input())
+i=0
+
+while i<=n:
+    i+=1
+    print(str(i)+' штук стоит '+str(cost*i)+' рублей') 
+    
 ```
 
