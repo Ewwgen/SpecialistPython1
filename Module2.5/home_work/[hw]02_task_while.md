@@ -20,6 +20,16 @@
 ```python
 a = int(input("a: "))
 b = int(input("b: "))
+i=0
 
-# TODO: you code here...
+if a<b:
+    while i<=b:
+        if i%5==0:
+            print(i)
+        i+=1 
+else:
+    while i<=a:
+        if i%5==0:
+            print(i)
+        i+=1 
 ```
