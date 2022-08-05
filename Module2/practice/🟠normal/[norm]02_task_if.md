@@ -22,7 +22,11 @@ else:
     print('No')
 
 ```
-
+a = int(input())
+if  a % 10 == 5:
+    print('Ok')
+else:
+    print('No')
 ---
 
 ### Данные для самопроверки
