@@ -23,7 +23,7 @@ for i in text:
         с +=1
 print (с)
 ```
-
+print (text.count('б'))
 ---
 
 ### Подсказки
