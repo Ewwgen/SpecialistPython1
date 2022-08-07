@@ -15,8 +15,13 @@
 ### Решение задачи
 
 ```python
-text = ...
-# TODO: you code here...
+text = (input())
+с =0
+
+for i in text:
+    if i == 'б':
+        с +=1
+print (с)
 ```
 
 ---
