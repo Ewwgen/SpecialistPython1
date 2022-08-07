@@ -17,7 +17,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+stroka = input()
+
+if stroka[0:2]=='id' and len(stroka)-2>0 and type(int(stroka[2:])*1)==int:
+    print('Yeas')
+else:
+    print('No')
 ```
 
 ---
