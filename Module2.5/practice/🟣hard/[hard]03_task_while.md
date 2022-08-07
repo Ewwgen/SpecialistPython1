@@ -17,7 +17,40 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+backup_a=a
+delimiter = 2
+summa = 0
+
+while a != 1:
+    if delimiter == backup_a:
+        summa = 1
+        break
+    elif a % delimiter == 0:
+        a //= delimiter
+        print(a, delimiter)
+        summa += delimiter
+    else:
+        delimiter += 1
+
+b = int(input("b: "))
+delimiter = 2
+summa2 = 0
+backup_b=b
+
+while b != 1:
+    if delimiter == backup_b:
+        summa = 1
+        break
+    elif b % delimiter == 0:
+        b //= delimiter
+        print(b, delimiter)
+        summa += delimiter
+    else:
+        delimiter += 1
+
+if summa == summa2:
+    print (a, b)
 ```
 
 ---
