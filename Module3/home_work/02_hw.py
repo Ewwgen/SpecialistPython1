@@ -6,3 +6,13 @@ import random
 numbers = []
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
 # TODO: your code here
+
+import random
+numbers = []
+n = int(input('Введите целое число: '))
+i = 0
+while i < n:
+  numbers.append(random.randint(-100, 100))
+  i +=1
+
+print(*numbers)
