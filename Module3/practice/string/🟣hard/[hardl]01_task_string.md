@@ -16,7 +16,18 @@
 
 ```python
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+index = 0
+words = []
+while index > -1:
+  index = text.find(' ')
+  words.append(text[:index ])
+  text = text[index+1:]
+
+words_count = 0
+for i in words:
+  if len(i) > 5:
+    words_count +=1
+print(words_count)
 ```
 
 ---
