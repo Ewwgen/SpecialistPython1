@@ -17,7 +17,11 @@
 ```python
 text = "В теории, теория и практика неразделимы. На практике это не так."
 vowels = "ауоыэяюёие"
-# TODO: you code here...
+char_count = 0
+for i in text.lower():
+  if i in vowels:
+    char_count += 1
+print('В этом предложении', char_count, 'гласных')
 ```
 
 ---
