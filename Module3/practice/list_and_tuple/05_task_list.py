@@ -6,7 +6,19 @@
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
+fruits = ["яблоко", "банан", "киви", "арбуз"]
+index = 0
+len_numbers = 0
+max_len = []
 
+for i in fruits:  
+  max_len.append(len(i))
+  
+add_space = 0 
+for i in fruits:
+  index += 1
+  len_numbers = len(i) 
+  print(index, i.rjust(max(max_len), ' '))
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
