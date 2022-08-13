@@ -3,7 +3,20 @@
 # Билет считается счастливым, если сумма его первых и последних цифр равны.
 
 def lucky_ticket(ticket_number):
-    # TODO: your code here
+    left_side = str(ticket_number // 1000)
+    right_side = str(ticket_number % 1000)
+    summ_left = 0
+    summ_right = 0
+    for i in left_side:
+        summ_left += int(i)
+
+    for i in right_side:
+        summ_right += int(i)
+
+    if summ_left == summ_right:
+        print("Этот билет счастливый!")
+    else:
+        print("Этот билет НЕ счастливый (")
     pass
 
 
