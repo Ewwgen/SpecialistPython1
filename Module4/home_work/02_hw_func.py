@@ -4,10 +4,59 @@
 
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
-def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+def distance(x1, y1, x2, y2, x3, y3):
+# ищем отрезок AB как гипотенузу треугольника
+    abx = 0
+    if x1 > x2:
+        abx = x1 - x2
+    else:
+        abx = x2 - x1
 
+    aby = 0
+    if y1 > y2 :
+        aby = y1 - y2
+    else:
+        aby = y2 - y1
+    ab = (abx**2+aby**2)**(1/2)
+
+    # ищем отрезок AС как гипотенузу треугольника
+    acx = 0
+    if x1 > x3:
+        acx = x1 - x3
+    else:
+        acx = x3 - x1
+
+    acy = 0
+    if y1 > y3:
+        acy = y1 - y3
+    else:
+        acy = y3 - y1
+    ac = (acx**2+acy**2)**(1/2)
+
+    # ищем отрезок BС как гипотенузу треугольника
+    bcx = 0
+    if x2 > x3:
+        bcx = x2 - x3
+    else:
+        bcx = x3 - x2
+
+    bcy = 0
+    if y2 > y3:
+        bcy = y2 - y3
+    else:
+        bcy = y3 - y2
+    bc = (bcx**2+bcy**2)**(1/2)
+
+
+    if ab == min(ab,ac,bc):
+        print("Самый короткий отрезок:", 'AB')
+    elif ac == min(ab,ac,bc):
+        print("Самый короткий отрезок:", 'AC')
+    else:
+        print("Самый короткий отрезок:", 'BC')
+        pass
+
+distance(1,2,3,6,8,3)
 
 # TODO: your code here
 print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
