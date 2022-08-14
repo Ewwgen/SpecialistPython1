@@ -44,6 +44,18 @@ if  s2_make_from_s1_unique == s2_list_wo_space:
 else:
   print('нет')
 ```
+s1 = "если бы да кабы во рту выросли грибы?"
+s2 = "ели вы да"
+data1 = set(s1)
+data2 = set(s2)
+
+result = data1.intersection(data2)
+
+if data2 == result:
+    print('yeas')
+    #print(result)
+else:
+    print('no')
 
 ---
 
