@@ -35,7 +35,13 @@ n = 6
 
 ```python
 n = int(input("n: "))
-# TODO: you code here...
+lines = [i for i in range(1, n+1)]
+#print(lines)
+line_len =0
+with open ('pyramid', 'a') as f:
+    for i in lines:
+        line_len = (n - len('*' * i + '\n'))+1
+        f.write((' ' * line_len) +'*' * i + '\n')
 ```
 
 ---
