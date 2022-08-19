@@ -37,11 +37,13 @@ n = 6
 n = int(input("n: "))
 lines = [i for i in range(1, n+1)]
 #print(lines)
-line_len =0
+line = "*"
+symbols = 1
 with open ('pyramid', 'a') as f:
     for i in lines:
-        line_len = (n - len('*' * i + '\n'))+1
-        f.write((' ' * line_len) +'*' * i + '\n')
+        #print(f"{line * symbols:^{n*2}}")
+        f.write(f"{line * symbols:^{n * 2}}" + '\n')
+        symbols +=2
 ```
 
 ---
