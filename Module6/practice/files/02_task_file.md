@@ -18,14 +18,14 @@
 
 ```python
 # Задаем путь к файлу:
-path = "dir/limericks.txt"  # вместо dir подставь название папки с файлом.
+path = "limericks.txt"  # вместо dir подставь название папки с файлом.
 # Или удалите dir, если limericks.txt в той же папке, что и питоновский файл
 
 # Открываем файл на чтение
-f = open(path, "r")
-# В переменную line считываем строку за стройкой из файла(f)
-for line in f:
-    ...
+with open(path, "r", encoding='UTF-8') as f:
+    for line in f:
+        f2 = open('limerics_upd', 'a', encoding='UTF-8')
+        f2.write(line.replace(".", ""))
 ```
 
 ---
