@@ -30,7 +30,15 @@
 # Совет: сначала считайте все цены из файла, сохраните в список,
 # преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
 # А затем, работам с привычным списком, выполните задания
-prices = []
+stroka = []
+numbers = []
+with open('sold', "r", encoding='UTF-8') as f:
+    for line in f:
+        stroka = line.split()
+        for i in stroka:
+            numbers.append(float(i))
+print(f'Было продано товаров на сумму: {sum(numbers)}, \nЦена самого дорогого товара: {max(numbers)}, \nЦена самого дешевого товара: {min(numbers)}')
+
 ```
 
 ---
