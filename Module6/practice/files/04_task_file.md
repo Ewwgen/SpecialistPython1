@@ -22,7 +22,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+stroka = []
+with open('sal', "r", encoding='UTF-8') as f:
+    for line in f:
+        stroka = line.split()
+        try:
+            if int(stroka[3]) > 60000:
+                with open('highly_paid.txt', 'a', encoding='UTF-8') as f2:
+                    f2.write(f'{stroka[0]} {stroka[1][1].upper()}.{stroka[2][1].upper()}. \n')
+                #print(f'{stroka[0]} {stroka[1][1].upper()}.{stroka[2][1].upper()}. ')
+        except:
+            pass
 ```
 
 ---
