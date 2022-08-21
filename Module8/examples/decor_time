@@ -1,3 +1,5 @@
+``````
+python
 import time
 def decor(func):
     def wrapper():
@@ -14,3 +16,4 @@ def privet():
 
 
 print(privet())
+~~~~~~
