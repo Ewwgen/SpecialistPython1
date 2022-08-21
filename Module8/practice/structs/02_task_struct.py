@@ -5,3 +5,14 @@
 #   например, lst = [1, 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 2, 4, 5, 6]
 #   2. элементы исходного списка, которые не имеют повторений(встречаются только один раз):
 #   например, lst = [1 , 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 4, 6]
+import random
+
+lst = [random.randint(-10,10) for _ in range(random.randint(10,20))]
+print(lst)
+list1 = list(set(lst))
+print(list1)
+list2 = [i for i in list1 if lst.count(i) == 1]
+#for i in list1:
+   # if i in (lst):
+        #list2.append(i)
+print(list2)
