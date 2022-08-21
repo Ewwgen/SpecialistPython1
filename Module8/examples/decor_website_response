@@ -1,0 +1,18 @@
+~~~~~~~~~~
+python
+import time
+import requests
+def decor(func):
+    def wrapper():
+        time1=time.time()
+        for i in range (50000000):
+            i += 1
+        time2 = time.time()
+        print(time2-time1)
+    return wrapper
+
+@decor
+def privet():
+    requests.get("https://google.com/")
+
+print(privet())
