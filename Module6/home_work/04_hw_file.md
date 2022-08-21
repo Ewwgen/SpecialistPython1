@@ -22,7 +22,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+result = {}
+for i in range(ord("А"), ord("Я")+1):
+    result[chr(i)] = []
+with open("fruits", "r", encoding = "UTF-8") as file:
+    for line in file:
+        if len(line) != 1:
+            result[line[0].upper()].append(line)
+for key, value in result.items():
+    if len(value) != 0:
+        with open(f"fruits_{key}", "a", encoding="UTF-8") as file:
+            for el in value:
+                file.write(el)
 ```
 
 ---
