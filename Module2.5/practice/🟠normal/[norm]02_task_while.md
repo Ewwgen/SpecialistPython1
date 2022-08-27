@@ -16,7 +16,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+needed_value = "stop"
+print("Для окончания программы введите", needed_value)
+input_value = ""
+values =[]
+while needed_value != input_value:
+    input_value = input("value: ")
+    if type(input_value) == int  and  input_value > 0:
+        values.append(input_value)
+print(len(values))
 ```
 
 ---
