@@ -17,7 +17,11 @@
 ```python
 n = int(input("n: "))
 
-# TODO: you code here...
+n = int(input())    # сколько раз цикл нужно выполнить
+cnt = 0
+while  cnt < n:
+    print('я учу питон')
+    cnt +=1
 ```
 
 ---
