@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input())    # сколько раз цикл нужно выполнить
+cnt = 0
+
+while cnt <= n:
+    print(cnt)
+    cnt +=1
 ```
 
 ---
