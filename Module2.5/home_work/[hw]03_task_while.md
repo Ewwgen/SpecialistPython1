@@ -28,7 +28,15 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input())    # сколько раз цикл нужно выполнить
+cycle = 1
+cnt = 0
+
+while cycle <= n:
+    for i in range (1,n+1):
+        print(i*cycle,' ', end="")
+    print('\n')
+    cycle += 1
 ```
 
 ---
