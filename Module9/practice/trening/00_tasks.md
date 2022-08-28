@@ -18,7 +18,8 @@
 
 Пропустить:		<font color="red">abcd1</font>
 
-~import re
+~~~~python
+import re
 
 test = 'cats. 8967. ?=+!. abcd1'
 
