@@ -18,6 +18,10 @@
 
 Пропустить:		<font color="red">abcd1</font>
 
+test = 'cats. 8967. ?=+!. abcd1'
+
+result = re.search(r'\w+\W+\s\d+\W+\s', test)
+
 #### Часть-2:
 Даны строки: **can man fan dan**
 
