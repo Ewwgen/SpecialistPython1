@@ -8,3 +8,19 @@
 # 4. Профессия
 # 5. Зарплата
 # Примечание: Данные сгенерированных сотрудников могут повторяться
+
+
+import random
+names = ['Boris', 'Ilya', 'Vera', 'Irina']
+surnames = ['Kazakov', 'Slepako', 'UIvanor', 'Svetlanov']
+professions = ['accountant', 'manager', 'seller', 'coocker']
+
+result = []
+
+for i in range(100):
+    current_worker ={'Name':random.choice(names), 'Surname': random.choice(surnames),
+                 'Age': random.randint(18,100),'Profession':random.choice(professions),
+                 'Salary':random.randint(10,10000000)}
+    result.append(current_worker)
+
+print(result)
