@@ -47,9 +47,9 @@ print(result1)
 ~~~python
 import re
 
-test = 'can man fan dan'
+test = 'can man ran fan pan'
 
-result1 = re.findall(r'.{3}\s', test)
+result1 = re.findall(r'[cfm].{2}\s', test)
 
 print(result1)
 
