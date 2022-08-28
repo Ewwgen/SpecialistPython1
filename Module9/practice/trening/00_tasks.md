@@ -18,9 +18,13 @@
 
 Пропустить:		<font color="red">abcd1</font>
 
+~import re
+
 test = 'cats. 8967. ?=+!. abcd1'
 
-result = re.search(r'\w+[.]+\s\d+\W+\s', test)
+result1 = re.findall(r'[a-z0-9\W]{4}[.]', test)
+
+print(result1)
 
 #### Часть-2:
 Даны строки: **can man fan dan**
