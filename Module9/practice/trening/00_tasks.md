@@ -20,7 +20,7 @@
 
 test = 'cats. 8967. ?=+!. abcd1'
 
-result = re.search(r'\w+\W+\s\d+\W+\s', test)
+result = re.search(r'\w+[.]+\s\d+\W+\s', test)
 
 #### Часть-2:
 Даны строки: **can man fan dan**
