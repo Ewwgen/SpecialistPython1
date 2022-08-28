@@ -43,6 +43,16 @@ print(result1)
 
 Пропустить		<font color="red">pan</font>
 
+~~~python
+import re
+
+test = 'can man fan dan'
+
+result1 = re.findall(r'.{3}\s', test)
+
+print(result1)
+
+
 #### Часть-3:
 
 Для строк ниже напишите выражение, которое будет соответствовать как полной дате, так и только годам.
